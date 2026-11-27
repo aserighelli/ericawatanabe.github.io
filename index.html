@@ -1,7 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio e página pessoal de Erica Watanabe.">
+  <title>Erica Watanabe — Página Exemplo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">Erica Watanabe</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <span class="badge">Bem-vindo(a)</span>
+        <h1>Olá, eu sou <span>Erica Watanabe</span>.</h1>
+        <p class="hero-subtitle">
+          Esta é uma primeira página de exemplo hospedada no GitHub Pages.
+          Personalize este espaço com sua biografia, projetos e formas de contato.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Espaço dedicado para apresentar sua trajetória, área de atuação,
+              interesses e habilidades principais. Você pode editar este texto
+              diretamente no arquivo <code>index.html</code>.
+            </p>
+            <p>
+              Este template foi estruturado com HTML semântico, CSS responsivo e
+              JavaScript leve, pronto para evoluir conforme suas necessidades.
+            </p>
+          </div>
+          <div class="highlights">
+            <div class="highlight-card">
+              <h3>Área de Atuação</h3>
+              <p>Design, Tecnologia, Pesquisa ou sua especialidade.</p>
+            </div>
+            <div class="highlight-card">
+              <h3>Localização</h3>
+              <p>Brasil • Disponível para projetos e colaborações.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <div class="card-tag">Exemplo 01</div>
+            <h3>Projeto Alpha</h3>
+            <p>
+              Descrição breve do primeiro projeto, destacando o objetivo,
+              tecnologias ou resultados alcançados.
+            </p>
+            <a href="#contato" class="card-link">Saiba mais →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Exemplo 02</div>
+            <h3>Projeto Beta</h3>
+            <p>
+              Espaço para apresentar um estudo de caso, artigo, publicação ou
+              trabalho criativo de destaque.
+            </p>
+            <a href="#contato" class="card-link">Saiba mais →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Exemplo 03</div>
+            <h3>Projeto Gamma</h3>
+            <p>
+              Mais um exemplo de cartão responsivo que se adapta automaticamente
+              a telas de celular, tablet e desktop.
+            </p>
+            <a href="#contato" class="card-link">Saiba mais →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container contact-box">
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <p>
+          Quer trocar uma ideia ou colaborar em algum projeto? Atualize os links
+          abaixo com seus canais reais.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:contato@exemplo.com" class="btn btn-primary">Enviar E-mail</a>
+          <a href="https://github.com/aserighelli/ericawatanabe.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Erica Watanabe. Hospedado com GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
